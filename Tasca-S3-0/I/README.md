@@ -54,22 +54,22 @@ public class ImpressoraBasica implements Impressora {
 - **1️⃣ Interfícies segregades segons funcionalitat:**
 
 ```java
-public interface Imprimible {
+public interface Impressora {
     void imprimir(String document);
 }
 
-public interface Escanejable {
+public interface Escaner {
     void escanejar(String document);
 }
 
-public interface Faxejable {
+public interface Fax {
     void enviarFax(String document);
 }
 ```
 - **2️⃣ Impressora bàsica: només imprimeix:**
 
 ```java
-public class ImpressoraBasica implements Imprimible {
+public class ImpressoraBasica implements Impressora {
     @Override
     public void imprimir(String document) {
         System.out.println("Imprimint: " + document);
@@ -79,7 +79,7 @@ public class ImpressoraBasica implements Imprimible {
 - **3️⃣ Impressora amb escàner: imprimeix i escaneja:**
 
 ```java
-public class ImpressoraEscaner implements Imprimible, Escanejable {
+public class ImpressoraEscaner implements Impressora, Escaner {
     @Override
     public void imprimir(String document) {
         System.out.println("Imprimint: " + document);
@@ -94,7 +94,7 @@ public class ImpressoraEscaner implements Imprimible, Escanejable {
 - **4️⃣ Impressora multifunció: imprimeix, escaneja i envia faxos:**
 
 ```java
-public class ImpressoraMultifuncio implements Imprimible, Escanejable, Faxejable {
+public class ImpressoraMultifuncio implements Impressora, Escaner, Fax {
     @Override
     public void imprimir(String document) {
         System.out.println("Imprimint: " + document);

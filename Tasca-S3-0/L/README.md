@@ -18,7 +18,7 @@ Quan fem servir **herència**, esperem que una subclasse **ampliï el comportame
 Suposem que estàs dissenyant una aplicació que treballa amb diverses **criptomonedes** i ofereixes una **API** com aquesta:
 
 ```java
-public abstract class Wallet {
+public class Wallet {
     private String nomCripto;
     private String codiCancelacio;
 
