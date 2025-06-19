@@ -40,5 +40,5 @@
 
 ### Has d’enviar:
 - L'URL del teu repositori GitHub amb les tasques fetes.
-- El teu nom complet i el nom de l’alumne que ha corregit el teu exercici.
+- i el nom de l’alumne que ha corregit el teu exercici.
 
