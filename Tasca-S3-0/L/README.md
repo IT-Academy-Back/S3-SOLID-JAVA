@@ -106,7 +106,7 @@ public class EstrategiaCancelacioNoPermitida implements EstrategiaCancelacio {
 - **3️⃣ Modificar la classe Wallet per usar l’estratègia de cancel·lació:**
 
 ```java
-public abstract class Wallet {
+public class Wallet {
     private String nomCripto;
     private EstrategiaCancelacio estrategiaCancelacio;
 
