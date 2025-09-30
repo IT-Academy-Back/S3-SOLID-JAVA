@@ -31,8 +31,8 @@ public class Wallet {
         System.out.println("S’està enviant diners per la blockchain de " + nomCripto);
     }
 
-    public void cancelarTransaccio(String id) {
-        if (AuthorizationCancel(codiCancelacio).cancel())
+    public void cancelarTransaccio(String idTransaccio) {
+        if (AuthorizationCancel.cancel(codiCancelacio, idTransaccio))
             System.out.println("S’anul·la la transacció" + id + "amb el codi" + codiCancelacio);
         else throw new TransactionCancelException("No s’ha pogut cancel·lar la transacció");
     }
