@@ -74,14 +74,11 @@ public class CalculadoraDescomptes {
 ```java
 public class Main {
     public static void main(String[] args) {
-        Producte producte = new Producte("Portàtil", 1000, "BlackFriday");
+        Producte producte = new Producte("Portàtil", 1000);
 
         CalculadoraDescomptes calculadora = new CalculadoraDescomptes();
-        calculadora.registraDescompte("Nadal", new DescompteNadal());
-        calculadora.registraDescompte("BlackFriday", new DescompteBlackFriday());
-        calculadora.registraDescompte("Aniversari", new DescompteAniversari());
-
-        double descompte = calculadora.calculaDescompte(producte);
+ 
+        double descompte = calculadora.calculaDescompte(producte, new DescompteNadal());
         System.out.println("Descompte aplicat: " + descompte);
     }
 }
