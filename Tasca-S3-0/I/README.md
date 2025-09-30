@@ -49,7 +49,7 @@ public class ImpressoraBasica implements Impressora {
 ⚠️Això viola el **Principi de Segregació d’Interfícies (ISP)**
  
 ✅ Solució amb ISP: 
-> Dividir la interfície Impressora en **interfícies més petites i específiques** (Impressora, Escanejadora, Faxadora), i fer **que cada classe implementi només les que necessita**.
+> Dividir la interfície Impressora en **interfícies més petites i específiques** (Impressora, Escaner, Fax), i fer **que cada classe implementi només les que necessita**.
 
 - **1️⃣ Interfícies segregades segons funcionalitat:**
 
