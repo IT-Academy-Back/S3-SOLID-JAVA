@@ -75,11 +75,11 @@ public class ImpressoraInforme {
     }
 }
 ```
-- **3️⃣ DesadorInforme: s'encarrega de desar en fitxer.**
+- **3️⃣ DesarInforme: s'encarrega de desar en fitxer.**
 
 ```java
 // Classe amb una única responsabilitat: desar informes
-public class DesadorInforme {
+public class DesarInforme {
     public void desarEnFitxer(Informe informe, String nomFitxer) {
         try (FileWriter writer = new FileWriter(nomFitxer)) {
             writer.write(informe.obtenirContingut());
@@ -100,7 +100,7 @@ public class Main {
         ImpressoraInforme impressora = new ImpressoraInforme();
         impressora.imprimir(informe);
 
-        DesadorInforme desador = new DesadorInforme();
+        DesarInforme desar = new DesarInforme();
         desador.desarEnFitxer(informe, "informe.txt");
     }
 }
