@@ -63,18 +63,9 @@ public class DescompteAniversari implements EstrategiaDescompte {
 ```java
 
 public class CalculadoraDescomptes {
-    private Map<String, EstrategiaDescompte> descomptes = new HashMap<>();
 
-    public void registraDescompte(String tipus, EstrategiaDescompte estrategia) {
-        descomptes.put(tipus, estrategia);
-    }
-
-    public double calculaDescompte(Producte producte) {
-        EstrategiaDescompte estrategia = descomptes.get(producte.getTipus());
-        if (estrategia != null) {
-            return estrategia.aplicaDescompte(producte);
-        }
-        return 0;
+    public double calculaDescompte(Producte producte, EstrategiaDescompte estrategia ) {
+        return estrategia.aplicaDescompte(producte);
     }
 }
 ````
