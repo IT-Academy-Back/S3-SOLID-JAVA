@@ -64,7 +64,7 @@ public class MoneroWallet extends Wallet{
 }
 
 ```
-🔴 Problema: MoneroWallet hereta de Wallet, però quan algú crida `cancelarTransaccio()` amb una instància de `MoneroWallet`, el **programa falla** perquè Monero no permet cancel·lacions.
+🔴 Problema: MoneroWallet hereta de Wallet, però quan algú crida `cancelarTransaccio()` amb una instància de `MoneroWallet`, el **programa va a trencar sempre** perquè Monero no permet cancel·lacions.
 
 ⚠️ Per tant, no es pot utilitzar `MoneroWallet` en contextos que esperen que `Wallet.cancelarTransaccio()` funcioni correctament → això **trenca LSP.**
 
