@@ -64,11 +64,11 @@ public class Informe {
 }
 ```
 
-- **2️⃣ ImpressoraInforme: s'encarrega d'imprimir.**
+- **2️⃣ Impressora: s'encarrega d'imprimir.**
 
 ```java
 // Classe amb una única responsabilitat: imprimir informes
-public class ImpressoraInforme {
+public class Impressora {
     public void imprimir(Informe informe) {
         System.out.println("Imprimint informe:");
         System.out.println(informe.obtenirContingut());
@@ -79,8 +79,8 @@ public class ImpressoraInforme {
 
 ```java
 // Classe amb una única responsabilitat: desar informes
-public class DesamentDInforme {
-    public void desar(Informe informe, String nomFitxer) {
+public class Desament {
+    public void desarInforme(Informe informe, String nomFitxer) {
         try (FileWriter writer = new FileWriter(nomFitxer)) {
             writer.write(informe.obtenirContingut());
             System.out.println("Informe desat a " + nomFitxer);
@@ -100,8 +100,8 @@ public class Main {
         ImpressoraInforme impressora = new ImpressoraInforme();
         impressora.imprimir(informe);
 
-        DesamentDInforme desament = new DesamentDInforme();
-        desament.desar(informe, "informe.txt");
+        Desament desament = new Desament();
+        desament.desarInforme(informe, "informe.txt");
     }
 }
 ```
