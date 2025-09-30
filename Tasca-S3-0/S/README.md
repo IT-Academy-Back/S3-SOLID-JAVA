@@ -69,13 +69,13 @@ public class Informe {
 ```java
 // Classe amb una única responsabilitat: imprimir informes
 public class Impressora {
-    public void imprimir(Informe informe) {
+    public void imprimirInforme(Informe informe) {
         System.out.println("Imprimint informe:");
         System.out.println(informe.obtenirContingut());
     }
 }
 ```
-- **3️⃣ DesamentDInforme: s'encarrega de desar l'informe.**
+- **3️⃣ Desament: s'encarrega de desar l'informe.**
 
 ```java
 // Classe amb una única responsabilitat: desar informes
@@ -98,7 +98,7 @@ public class Main {
         Informe informe = new Informe("Aquest és el contingut de l'informe.");
 
         ImpressoraInforme impressora = new ImpressoraInforme();
-        impressora.imprimir(informe);
+        impressora.imprimirInforme(informe);
 
         Desament desament = new Desament();
         desament.desarInforme(informe, "informe.txt");
