@@ -101,7 +101,7 @@ public class Main {
         impressora.imprimir(informe);
 
         DesarInforme desar = new DesarInforme();
-        desador.desarEnFitxer(informe, "informe.txt");
+        desar.desarEnFitxer(informe, "informe.txt");
     }
 }
 ```
