@@ -64,7 +64,7 @@ public class DescompteAniversari implements EstrategiaDescompte {
 
 public class CalculadoraDescomptes {
 
-    public double calculaDescompte(Producte producte, EstrategiaDescompte estrategia ) {
+    public double calculaDescompte(Producte producte, EstrategiaDescompte estrategia) {
         return estrategia.aplicaDescompte(producte);
     }
 }
