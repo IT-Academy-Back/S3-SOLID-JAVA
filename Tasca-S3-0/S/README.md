@@ -12,7 +12,7 @@ Dit d’una altra manera, una classe hauria de tenir **una sola responsabilitat*
 Si tens una classe `Informe` que:
 - genera contingut,
 - imprimeix l’informe,
-- i el desa en un arxiu.
+- i el desa l'informe.
 
 ```java
 public class Informe {
@@ -31,7 +31,7 @@ public class Informe {
         System.out.println(contingut);
     }
 
-    public void desarEnFitxer(String nomFitxer) {
+    public void desar(String nomFitxer) {
         try (FileWriter writer = new FileWriter(nomFitxer)) {
             writer.write(contingut);
             System.out.println("Informe desat a " + nomFitxer);
@@ -75,12 +75,12 @@ public class ImpressoraInforme {
     }
 }
 ```
-- **3️⃣ DesarInforme: s'encarrega de desar en fitxer.**
+- **3️⃣ DesamentDInforme: s'encarrega de desar l'informe.**
 
 ```java
 // Classe amb una única responsabilitat: desar informes
-public class DesarInforme {
-    public void desarEnFitxer(Informe informe, String nomFitxer) {
+public class DesarmentDInforme {
+    public void desar(Informe informe, String nomFitxer) {
         try (FileWriter writer = new FileWriter(nomFitxer)) {
             writer.write(informe.obtenirContingut());
             System.out.println("Informe desat a " + nomFitxer);
@@ -100,8 +100,8 @@ public class Main {
         ImpressoraInforme impressora = new ImpressoraInforme();
         impressora.imprimir(informe);
 
-        DesarInforme desar = new DesarInforme();
-        desar.desarEnFitxer(informe, "informe.txt");
+        DesamentDInforme desament = new DesamentDInforme();
+        desament.desar(informe, "informe.txt");
     }
 }
 ```
