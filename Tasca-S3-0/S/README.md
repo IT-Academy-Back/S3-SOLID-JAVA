@@ -79,7 +79,7 @@ public class ImpressoraInforme {
 
 ```java
 // Classe amb una única responsabilitat: desar informes
-public class DesarmentDInforme {
+public class DesamentDInforme {
     public void desar(Informe informe, String nomFitxer) {
         try (FileWriter writer = new FileWriter(nomFitxer)) {
             writer.write(informe.obtenirContingut());
