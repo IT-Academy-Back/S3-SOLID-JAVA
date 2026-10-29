@@ -36,6 +36,14 @@ java -cp target/classes cat.itacademy.solid.s.InvoiceApp
 
 L'exemple genera `output/invoices/invoice.txt`.
 
+## 🧲 Executar l'exercici de la D
+
+Trobaràs el codi de reserves i els dos reptes de refactoring a [l'exercici de la D](src/main/java/cat/itacademy/solid/d/README.md).
+
+Importa el projecte com a projecte Maven a IntelliJ IDEA i executa el `main` de `cat.itacademy.solid.d.BookingApp`. La dependència H2 està inclosa al projecte.
+
+Els repositoris H2 i en memòria ja estan implementats i provats. El primer repte és connectar qualsevol dels dos a l'aplicació; el segon, controlar el temps als tests. El test del límit exacte de 24 hores està deshabilitat expressament al punt de partida.
+
 ## 🛠️ Com fer la tasca
 
 - 📖 Llegeix el fitxer README.md dins la carpeta del principi que vols estudiar.

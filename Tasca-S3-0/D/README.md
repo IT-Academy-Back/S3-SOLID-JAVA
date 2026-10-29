@@ -1,5 +1,7 @@
 # 🧲 D - Principi d’Inversió de Dependències (DIP)
 
+Aquest document conté una introducció al DIP. L'activitat actual de reserves i les instruccions per executar-la són al [nou enunciat de la D](../../src/main/java/cat/itacademy/solid/d/README.md).
+
 ## 🧠 Què és?
 
 El **Principi d’Inversió de Dependències (DIP)** estableix que:
@@ -102,7 +104,7 @@ public class Main {
 
 ## 🎯 Objectiu de l’exercici
 
-A l’arxiu Java inclòs en aquest directori, trobaràs una classe que depèn **directament d’una altra classe concreta**.
+A l'[activitat de reserves](../../src/main/java/cat/itacademy/solid/d/README.md) trobaràs un cas d'ús que depèn directament d'una persistència concreta.
 
 🔧 El teu repte és:
 
