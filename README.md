@@ -23,6 +23,19 @@
    cd nom-del-teu-repositori
 ```
 
+## 🧪 Executar l'exercici de la S
+
+Trobaràs l'enunciat i el codi de facturació a [l'exercici de la S](src/main/java/cat/itacademy/solid/s/README.md).
+
+Necessites **JDK 17 o superior** i **Maven**. Des de l'arrel del projecte, executa:
+
+```bash
+mvn test
+java -cp target/classes cat.itacademy.solid.s.InvoiceApp
+```
+
+L'exemple genera `output/invoices/invoice.txt`.
+
 ## 🛠️ Com fer la tasca
 
 - 📖 Llegeix el fitxer README.md dins la carpeta del principi que vols estudiar.
